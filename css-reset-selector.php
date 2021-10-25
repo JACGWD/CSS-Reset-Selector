@@ -55,8 +55,8 @@ if( !class_exists('jacgwd_reset') ) {
          */
         function register_options_page(){
             add_options_page(
-                'Reset Selector', // <title>...</title>
-                'Reset Selector', // in admin menu
+                'CSS Reset Selector', // <title>...</title>
+                'CSS Reset Selector', // in admin menu
                 'manage_options', // WP User Capabilities (permissions) required
                 'jacgwd-reset', // slug/URL
                 array($this, 'output_options_page') // Function that outputs the HTML in the admin page ($this being "in this class/instance")
