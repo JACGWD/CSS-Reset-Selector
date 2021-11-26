@@ -107,7 +107,7 @@ if( !class_exists('jacgwd_reset') ) {
                                 <td>Reset type</td>
                                 <td>
                                     <label><input type="radio" name="jacgwd_reset_selector" value="" <?php if($preference == '') echo "checked='checked'"; ?> /> None</label> <br />
-                                    <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_20" <?php if($preference == 'eric_meyer_20') echo "checked='checked'"; ?> /> Eric Meyer</label> <br />
+                                    <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_20" <?php if($preference == 'eric_meyer_20') echo "checked='checked'"; ?> /> Eric Meyer Classic</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_21" <?php if($preference == 'eric_meyer_21') echo "checked='checked'"; ?> /> Eric Meyer (with Position: Relative for Everything)</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="normalize"  <?php if($preference == 'normalize')  echo "checked='checked'"; ?> /> Normalize</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="andy_bell"  <?php if($preference == 'andy_bell')  echo "checked='checked'"; ?> /> Andy Bell</label>
