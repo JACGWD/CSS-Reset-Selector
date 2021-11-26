@@ -1,7 +1,8 @@
 # reset-selector
  
-This plugin is a simple Wordpress widget that gives students a choice of three different CSS Resets:
+This plugin is a simple Wordpress widget that gives students a choice of four different CSS Resets:
 - Eric Meyer: Based on the original reset by Eric Meyer, this version has a few slight customizations. See: http://meyerweb.com/eric/tools/css/reset/
+- Eric Meyer with Position: Relative for Everything: Based on the reset file above, this reset includes position: relative as a default for all elements. This is useful in many situations where absolute positioning across deeply nested hierarchies isn't needed.
 - Normalize: The modern CSS normalizer (instead of reset) that has been immensely popular for many years. See: https://www.github.com/necolas/normalize.css
 - Andy Bell's more modern reset. See: https://github.com/andy-piccalilli/modern-css-reset
 
