@@ -4,7 +4,7 @@
  * Plugin Name:     CSS Reset Selector
  * Plugin URI:      https://github.com/JACGWD/reset-selector
  * Description:    Easily manage CSS reset files.
- * Version:         0.0.1
+ * Version:         0.0.2
  * Author:          Dave Woodhall & Eric Girouard
  * Author URI:      https://graphicandwebdesign.ca
  * Text Domain:     css_reset_selector
@@ -107,7 +107,8 @@ if( !class_exists('jacgwd_reset') ) {
                                 <td>Reset type</td>
                                 <td>
                                     <label><input type="radio" name="jacgwd_reset_selector" value="" <?php if($preference == '') echo "checked='checked'"; ?> /> None</label> <br />
-                                    <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer" <?php if($preference == 'eric_meyer') echo "checked='checked'"; ?> /> Eric Meyer</label> <br />
+                                    <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_20" <?php if($preference == 'eric_meyer_20') echo "checked='checked'"; ?> /> Eric Meyer</label> <br />
+                                    <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_21" <?php if($preference == 'eric_meyer_21') echo "checked='checked'"; ?> /> Eric Meyer (with Position: Relative for Everything)</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="normalize"  <?php if($preference == 'normalize')  echo "checked='checked'"; ?> /> Normalize</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="andy_bell"  <?php if($preference == 'andy_bell')  echo "checked='checked'"; ?> /> Andy Bell</label>
                                 </td>
@@ -160,8 +161,12 @@ if( !class_exists('jacgwd_reset') ) {
             // if no case is active do nothing
             break; 
             
-            case "eric_meyer": 
-                wp_enqueue_style("reset-meyer", plugin_dir_url(__FILE__)."reset/simple-css-reset-v2.1.css");
+            case "eric_meyer_20": 
+                wp_enqueue_style("reset-meyer_20", plugin_dir_url(__FILE__)."reset/simple-css-reset-v2.0.css");
+            break;
+
+            case "eric_meyer_21": 
+                wp_enqueue_style("reset-meyer_21", plugin_dir_url(__FILE__)."reset/simple-css-reset-v2.1.css");
             break;
 
             case "normalize": 
