@@ -2,8 +2,8 @@
 
 /**
  * Plugin Name:     CSS Reset Selector
- * Plugin URI:      https://github.com/JACGWD/reset-selector
- * Description:    Easily manage CSS reset files.
+ * Plugin URI:      https://github.com/JACGWD/css-reset-selector
+ * Description:     Easily manage CSS reset files.
  * Version:         0.0.2
  * Author:          Dave Woodhall & Eric Girouard
  * Author URI:      https://graphicandwebdesign.ca
