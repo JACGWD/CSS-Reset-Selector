@@ -108,7 +108,7 @@ if( !class_exists('jacgwd_reset') ) {
                                 <td>
                                     <label><input type="radio" name="jacgwd_reset_selector" value="" <?php if($preference == '') echo "checked='checked'"; ?> /> None</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_20" <?php if($preference == 'eric_meyer_20') echo "checked='checked'"; ?> /> Eric Meyer Classic</label> <br />
-                                    <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_22" <?php if($preference == 'eric_meyer_21') echo "checked='checked'"; ?> /> Eric Meyer (with Position: Relative for Everything)</label> <br />
+                                    <label><input type="radio" name="jacgwd_reset_selector" value="eric_meyer_22" <?php if($preference == 'eric_meyer_22') echo "checked='checked'"; ?> /> Eric Meyer (with Position: Relative for Everything)</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="normalize"  <?php if($preference == 'normalize')  echo "checked='checked'"; ?> /> Normalize</label> <br />
                                     <label><input type="radio" name="jacgwd_reset_selector" value="andy_bell"  <?php if($preference == 'andy_bell')  echo "checked='checked'"; ?> /> Andy Bell</label>
                                 </td>
@@ -166,7 +166,7 @@ if( !class_exists('jacgwd_reset') ) {
             break;
 
             case "eric_meyer_22": 
-                wp_enqueue_style("reset-meyer_21", plugin_dir_url(__FILE__)."reset/simple-css-reset-v2.2.css");
+                wp_enqueue_style("reset-meyer_22", plugin_dir_url(__FILE__)."reset/simple-css-reset-v2.2.css");
             break;
 
             case "normalize": 
